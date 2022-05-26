@@ -1,0 +1,25 @@
+{
+    "name": "n-sharp-language-support",
+    "displayName": "N-Sharp Language Support",
+    "description": "Adds support for N-Sharp scripts in VSCode",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.67.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "nsharp",
+            "aliases": ["N-Sharp", "nsharp"],
+            "extensions": [".ns"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "nsharp",
+            "scopeName": "source.ns",
+            "path": "./syntaxes/nsharp.tmLanguage.json"
+        }]
+    }
+}
